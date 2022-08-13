@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff: 'Red Hat Display', sans-serif;
+
+    /* --------------------------------- */
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/* --------------------------------------- */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+
+}
+
+
+
+body{ background: url(images/pattern-background-desktop.svg);
+
+    background-color: var(--Very-pale-blue);
+
+    background-repeat: no-repeat;
+    
+}
+p{
+    font-size: 16px;
+}
+
+
+.container{
+    width: 350px;
+    height: 580px;
+    margin: 0px;
+    background: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 20px;
+
+}
+
+
+.image{
+    width: 350px;
+    border-radius: 20px 20px 0 0;
+}
+
+.ord-summ{
+    color: var(--Dark-blue);
+    text-align: center;
+    font-weight: 900;
+    font-family: var(--ff);
+    padding: 20px;
+}
+
+.you-can{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    text-align: center;
+    font-family: var(--ff);
+    font-weight: 500;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.rate{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    background:var(--Very-pale-blue) ;
+    border-radius: 10px;
+
+
+}
+
+
+.rate1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music{
+    padding-right: 20px;
+}
+.anu-plan{
+    color: var(--Dark-blue);
+    font-family: var(--ff);
+    font-weight: 700;
+}
+
+.per-year{
+    color: var(--Desaturated-blue);
+    font-family: var(--ff);
+}
+
+.change{
+    font-weight: 500;
+    color: var(--Bright-blue);
+    font-family: var(--ff);
+    transition: all .3s ease-in;
+
+    
+}
+
+.change:hover{
+    text-decoration: none;
+    color: hsl(245, 83%, 68%);
+}
+
+.proceed{
+    font-family: var(--ff);
+    color: var(--Very-pale-blue);
+    background: var(--Bright-blue);
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all .3s ease-in;
+}
+
+.proceed:hover{
+    background: hsl(245, 83%, 68%);
+    cursor: pointer;
+}
+
+.cancel{
+    color: var(--Desaturated-blue);
+    font-family: var(--ff);
+    text-align: center;
+    padding: 10px;
+
+    transition: all .3s ease-in;
+}
+
+.cancel:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------- */
+
+
+@media screen  and (max-width: 375px){
+    
+    body{
+        background: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-color: var(--Very-pale-blue);
+    }
+    .container{
+        width: 300px;
+        height: 520px;
+    
+    }
+
+    .image{
+        width: 300px;
+    }
+
+    .ord-summ{
+        font-size: 20px;
+    }
+
+    .you-can{
+        font-size: 15px;
+    }
+
+    .rate{
+        padding: 15px;
+    }
+
+    .music{
+        width: 60px;
+    }
+
+    .anu-plan{
+        font-weight: 900;
+        font-size: 13px;
+    }
+
+    .per-year{
+        font-size: 13px;
+    }
+
+    .change{
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .proceed{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .cancel{
+        padding: 25px;
+    }
+
+
+
+}
