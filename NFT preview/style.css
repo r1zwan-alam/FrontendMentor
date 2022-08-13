@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--Very-dark-blue_main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue_card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue_line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+--ff: 'Outfit', sans-serif;
+}
+body{
+    background: var(--Very-dark-blue_main-BG);
+}
+
+p{  
+    font-size: 18px;
+    font-family: var(--ff);
+
+}
+
+
+.container{
+    background: var(--Very-dark-blue_card-BG);
+    width: 320px;
+    border-radius: 15px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.image{
+    width: 280px;
+    border-radius: 10px;
+    
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.equilibrium{
+    font-size: 20px;
+    font-family: var(--ff);
+    color: var(--White);
+    font-weight: 700;
+    padding: 4px 20px;
+    padding-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.our{
+    font-size: 17px;
+    color: var(--Soft-blue);
+    margin: 0 20px;
+    padding-bottom: 15px;
+}
+
+.eth-and-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--Very-dark-blue_line);
+}
+
+.time{
+    color: var(--Soft-blue);
+    font-size: 17px;
+}
+
+.Eth{
+    font-family: var(--ff);
+    color: var(--Cyan);
+    padding: 0px 0px;
+}
+
+.Eth-main, .time-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    
+}
+
+.footer img{
+    height: 30px;
+    margin: 0 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.footer-text1{
+    font-family: var(--ff);
+    color: var(--Soft-blue);
+    font-size: 17px;
+}
+
+.footer-text2{
+    color: var(--White);
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.equilibrium:hover , .footer-text2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+.img-container:hover{
+    fill: var(--Cyan);
+    color: var(--Cyan);
+    z-index:1;
+}
+
+.image-icon{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.overlay{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    background: var(--Cyan);
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}
+
+
+.img-container:hover .overlay{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
