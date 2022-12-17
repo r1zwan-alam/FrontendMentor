@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Cream);
+}
+
+:root{
+    --ff-1: 'Montserrat', sans-serif;
+    --ff-2: 'Fraunces', serif;
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    
+
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --Very-dark-blue:hsl(212, 21%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+}
+.perfume{
+    font-family: var(--ff-1);
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+p{
+    font-size: 14px;
+    font-family: var(--ff-1);
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 25px;
+    line-height: 22px;
+}
+
+h1{
+    font-family: var(--ff-2);
+    padding: 0px 0px;
+    color: var(--Very-dark-blue);
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.text-box{
+    padding: 30px;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.image{
+    background: url(images/image-product-desktop.jpg);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: auto;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.span1{
+    color: var(--Dark-cyan);
+    font-family: var(--ff-2);
+    font-weight: 70px;
+    font-size: 35px;
+    padding-right: 20px;
+}
+
+.span2{
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+    font-family: var(--ff-1);
+}
+
+.rate{
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;    
+}
+
+.cart a{
+    text-decoration: none;
+    font-family: var(--ff-1);
+    color: white;
+    
+    border-radius: 8px;
+    background: var(--Dark-cyan);
+    text-align: center;
+    padding: 12px 61px;
+}
+.cart a:hover{
+    background:hsl(159, 37%, 24%) ;
+}
+.cart{ padding-top: 0px;
+}
+
+/* <!-------------------------------------------------> */
+
+@media screen and (max-width: 375px) {
+    .container{
+        display: block;
+        width: 350px;
+       
+        padding-bottom: 0px;
+    }
+     
+    .image{
+        background: url(images/image-product-mobile.jpg);
+        background-size: 350px 220px;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 220px;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .text-box{
+        border-radius: 0 0 10px 10px ;
+        width: 350px;
+        height: 400px;
+        padding: 27px;
+    }
+   
+    .perfume{
+        font-family: var(--ff-1);
+        color: var(--Dark-grayish-blue);
+        letter-spacing: 3px;
+    }
+    
+    .span1{
+        color: var(--Dark-cyan);
+        font-family: var(--ff-2);
+        font-weight: 70px;
+        font-size: 35px;
+        padding-right: 20px;
+    }
+    
+    .span2{
+        text-decoration: line-through;
+        color: var(--Dark-grayish-blue);
+        font-family: var(--ff-1);
+    }
+    
+    .rate{
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;    
+    }
+    
+    .cart a{
+        text-decoration: none;
+        font-family: var(--ff-1);
+        color: white;
+        border: 2px solid var(--Dark-cyan);
+        border-radius: 8px;
+        background: var(--Dark-cyan);
+        text-align: center;
+        padding: 12px 89px;
+        width: 100%;
+    }
+    
+    .cart{ padding-top: 0px;
+        
+    }
+
+}
+
+
+
+
+
